@@ -1108,7 +1108,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libfsmsmartpaparse \
     libfvaudio \
     libged \
