@@ -979,6 +979,7 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     libXMFaceFocus-vendor \
     libXMFaceFocus1206 \
+    lib_android_keymaster_keymint_utils-v34 \
     lib_iir \
     libaaa_aaautil \
     libaaa_afassist_V2 \
@@ -1137,6 +1138,9 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libjpegdecoder_klee \
     libjpegencoder_klee \
+    libkeymint-v34 \
+    libkeymint_remote_prov_support-v34 \
+    libkeymint_support-v34 \
     libladder \
     libmbrainSDKv \
     libmcve \
