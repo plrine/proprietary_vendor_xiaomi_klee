@@ -1164,6 +1164,7 @@ PRODUCT_PACKAGES += \
     libmispowerop \
     libmmprofile \
     libmnetlink_v104 \
+    libmnl_mtk \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -1564,7 +1565,6 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmmlpqImpl \
-    libmnl \
     libmtk_mali_utils \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \
@@ -2229,6 +2229,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
     vendor_lib64_hw_vulkan_mali_so \
+    vendor_lib64_libmnl_so \
     vendor_lib64_arm_graphics-V5-ndk_so \
     vendor_lib64_arm_mali_platform-V2-ndk_so \
     vendor_lib64_goyaov13bultra_mipi_raw_IdxMgr_so \
@@ -2482,7 +2483,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmmagent_so \
     vendor_lib64_libmml_so \
     vendor_lib64_libmmlpqImpl_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmtk_mali_utils_so \
     vendor_lib64_libmtkcam_atmseventmgr_so \
     vendor_lib64_libmtkcam_debugwrapper_so \

@@ -8539,6 +8539,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmnl_mtk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmnl_mtk.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmsbc_mtk",
     owner: "xiaomi",
     strip: {
@@ -21182,31 +21206,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6899",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmnl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6899/libmnl.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -39449,7 +39448,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl_mtk",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -40633,6 +40632,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/vulkan.mali.so",
     symlink_target: "/vendor/lib64/hw/mt6899/vulkan.mali.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libmnl_so",
+    soc_specific: true,
+    installed_location: "lib64/libmnl.so",
+    symlink_target: "/vendor/lib64/libmnl_mtk.so",
 }
 
 install_symlink {
@@ -42404,13 +42410,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libmmlpqImpl.so",
     symlink_target: "/vendor/lib64/mt6899/libmmlpqImpl.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libmnl_so",
-    soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6899/libmnl.so",
 }
 
 install_symlink {
