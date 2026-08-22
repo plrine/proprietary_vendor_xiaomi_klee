@@ -641,7 +641,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/xiaomi/klee/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/klee/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/klee/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
@@ -2156,7 +2155,6 @@ PRODUCT_PACKAGES += \
     touch_boost \
     volte_clientapi_ua \
     volte_rcs_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
     android.hardware.audio.parameter_parser.service \
