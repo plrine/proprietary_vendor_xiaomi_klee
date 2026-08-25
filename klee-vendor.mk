@@ -1135,7 +1135,6 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libjpegdecoder_klee \
     libjpegencoder_klee \
-    libladder \
     libmbrainSDKv \
     libmcve \
     libmetatagwrapper \
@@ -1281,7 +1280,6 @@ PRODUCT_PACKAGES += \
     libtranslator_mdmi_v2.8.2 \
     libtranslator_utils \
     libtrm \
-    libudf \
     libultrahdr_klee \
     libultrahdr_mtk \
     libvcodec_oal \

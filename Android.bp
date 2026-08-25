@@ -6,7 +6,6 @@ soong_namespace {
     imports: [
         "device/xiaomi/klee",
         "hardware/mediatek",
-        "hardware/mediatek/libaedv",
         "hardware/mediatek/libmtkperf_client",
         "hardware/xiaomi",
     ],
@@ -7548,33 +7547,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libladder",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmbrainSDKv",
     owner: "xiaomi",
     strip: {
@@ -11949,33 +11921,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmtkrillog",
                 "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libudf",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libudf.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libunwindstack",
                 "libc++",
                 "libc",
                 "libm",
