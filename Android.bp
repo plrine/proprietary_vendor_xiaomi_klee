@@ -190,32 +190,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.security.keymint-V3-ndk-v34",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk-v34.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.security.secureclock-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.xiaomi.camdfx",
     owner: "xiaomi",
     strip: {
@@ -36182,7 +36156,7 @@ cc_prebuilt_library_shared {
                 "libkeymint",
                 "libkeymint_support",
                 "libkeymint_remote_prov_support",
-                "android.hardware.security.keymint-V3-ndk-v34",
+                "android.hardware.security.keymint-V4-ndk",
                 "android.hardware.secure_element-V1-ndk",
                 "libc++",
                 "libc",
@@ -37044,7 +37018,7 @@ cc_prebuilt_library_shared {
                 "libkeymint",
                 "libkeymaster_messages",
                 "libkeymint_support",
-                "android.hardware.security.keymint-V3-ndk-v34",
+                "android.hardware.security.keymint-V4-ndk",
                 "libkeymint_remote_prov_support",
                 "libmisight",
                 "libc++",
@@ -38687,7 +38661,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.mitee",
             ],
             shared_libs: [
-                "android.hardware.security.keymint-V3-ndk-v34",
+                "android.hardware.security.keymint-V4-ndk",
                 "libteecli",
                 "libhidlbase",
                 "android.hardware.security.rkp-V3-ndk",
