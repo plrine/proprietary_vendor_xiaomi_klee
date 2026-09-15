@@ -3645,6 +3645,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so",
             ],
             shared_libs: [
+                "libaudioutils_shim",
                 "android.hardware.audio.core-V2-ndk",
                 "libcutils",
                 "liblog",
@@ -10708,6 +10709,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libnotifyaudiohal.so",
             ],
             shared_libs: [
+                "libaudioutils_shim",
                 "libbase",
                 "libbinder",
                 "liblog",
