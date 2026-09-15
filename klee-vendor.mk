@@ -977,6 +977,7 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     libXMFaceFocus-vendor \
     libXMFaceFocus1206 \
+    lib_android_keymaster_keymint_utils-v34 \
     lib_iir \
     libaaa_aaautil \
     libaaa_afassist_V2 \
@@ -1135,6 +1136,9 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libjpegdecoder_klee \
     libjpegencoder_klee \
+    libkeymint-v34 \
+    libkeymint_remote_prov_support-v34 \
+    libkeymint_support-v34 \
     libmbrainSDKv \
     libmcve \
     libmetatagwrapper \
@@ -1561,7 +1565,7 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmmlpqImpl \
-    libmnl_mtk \
+    libmnl \
     libmtk_mali_utils \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \
@@ -2474,6 +2478,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmmagent_so \
     vendor_lib64_libmml_so \
     vendor_lib64_libmmlpqImpl_so \
+    vendor_lib64_libmnl_mtk_so \
     vendor_lib64_libmtk_mali_utils_so \
     vendor_lib64_libmtkcam_atmseventmgr_so \
     vendor_lib64_libmtkcam_debugwrapper_so \

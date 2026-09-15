@@ -121,7 +121,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.bluetooth.audio-V4-ndk",
                 "android.hardware.audio.core.sounddose-V2-ndk",
                 "android.hardware.audio.core-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
+                "android.media.audio.common.types-V5-ndk",
                 "libalsautilsv2",
                 "libaudioaidlcommon",
                 "libaudioutils",
@@ -943,7 +943,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
+                "android.media.audio.common.types-V5-ndk",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -2689,6 +2689,33 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libneuron_runtime.8",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_android_keymaster_keymint_utils-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_android_keymaster_keymint_utils-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v34",
+                "libbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -7534,6 +7561,108 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libjpeg",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymint-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v34",
+                "libhidlbase",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils-v34",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor",
+                "libcrypto",
+                "libcutils",
+                "libkeymaster_messages",
+                "libkeymaster_portable",
+                "liblog",
+                "libpuresoftkeymasterdevice",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint_remote_prov_support-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymint_remote_prov_support-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v34",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor",
+                "libcppcose_rkp",
+                "libcrypto",
+                "libkeymaster_portable",
+                "libjsoncpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint_support-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymint_support-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v34",
+                "libbase",
+                "libcrypto",
+                "libutils",
+                "libhardware",
                 "libc++",
                 "libc",
                 "libm",
@@ -21172,7 +21301,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl_mtk",
+    name: "libmnl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -21191,7 +21320,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
+    relative_install_path: "mt6899",
     prefer: true,
     soc_specific: true,
 }
@@ -27563,7 +27692,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_foundation",
                 "libdlbpreg",
                 "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
+                "android.media.audio.common.types-V5-ndk",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -27600,7 +27729,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
+                "android.media.audio.common.types-V5-ndk",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -27646,7 +27775,7 @@ cc_prebuilt_library_shared {
                 "libdlbpreg",
                 "libdmshal",
                 "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
+                "android.media.audio.common.types-V5-ndk",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -27684,7 +27813,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
+                "android.media.audio.common.types-V5-ndk",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -36176,12 +36305,12 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "vendor.xiaomi.hardware.idmanager-V1-ndk",
                 "libkeymaster_messages",
-                "lib_android_keymaster_keymint_utils",
+                "lib_android_keymaster_keymint_utils-v34",
                 "libhardware",
                 "libkeymaster4support",
-                "libkeymint",
-                "libkeymint_support",
-                "libkeymint_remote_prov_support",
+                "libkeymint-v34",
+                "libkeymint_support-v34",
+                "libkeymint_remote_prov_support-v34",
                 "android.hardware.security.keymint-V3-ndk-v34",
                 "android.hardware.secure_element-V1-ndk",
                 "libc++",
@@ -37040,12 +37169,12 @@ cc_prebuilt_library_shared {
                 "vendor.xiaomi.hardware.idmanager-V1-ndk",
                 "libhardware",
                 "libkeymaster4support",
-                "lib_android_keymaster_keymint_utils",
-                "libkeymint",
+                "lib_android_keymaster_keymint_utils-v34",
+                "libkeymint-v34",
                 "libkeymaster_messages",
-                "libkeymint_support",
+                "libkeymint_support-v34",
                 "android.hardware.security.keymint-V3-ndk-v34",
-                "libkeymint_remote_prov_support",
+                "libkeymint_remote_prov_support-v34",
                 "libmisight",
                 "libc++",
                 "libc",
@@ -38436,7 +38565,7 @@ cc_prebuilt_binary {
                 "android.hardware.audio.core-V2-ndk",
                 "android.hardware.bluetooth.audio-V4-ndk",
                 "android.hardware.audio.core.sounddose-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
+                "android.media.audio.common.types-V5-ndk",
                 "libalsautilsv2",
                 "libaudioaidlcommon",
                 "libaudioutils",
@@ -38693,13 +38822,13 @@ cc_prebuilt_binary {
                 "android.hardware.security.rkp-V3-ndk",
                 "android.hardware.security.secureclock-V1-ndk",
                 "android.hardware.security.sharedsecret-V1-ndk",
-                "lib_android_keymaster_keymint_utils",
+                "lib_android_keymaster_keymint_utils-v34",
                 "libbase",
                 "libbinder_ndk",
                 "libcrypto",
                 "libhardware",
                 "libkeymaster_messages",
-                "libkeymint",
+                "libkeymint-v34",
                 "liblog",
                 "libtrusty",
                 "libutils",
@@ -42264,6 +42393,12 @@ install_symlink {
     symlink_target: "/vendor/lib64/mt6899/libmmlpqImpl.so",
 }
 
+install_symlink {
+    name: "vendor_lib64_libmnl_mtk_so",
+    soc_specific: true,
+    installed_location: "lib64/libmnl_mtk.so",
+    symlink_target: "/vendor/lib64/mt6899/libmnl.so",
+}
 
 install_symlink {
     name: "vendor_lib64_libmtk_mali_utils_so",
