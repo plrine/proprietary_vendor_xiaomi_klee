@@ -901,6 +901,7 @@ PRODUCT_PACKAGES += \
     APUWareUtilsAidlServer \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
+    android.hardware.security.keymint-V3-ndk-v34 \
     com.xiaomi.camdfx \
     com.xiaomi.camhal.extmodel.ec_executor \
     com.xiaomi.camhal.extmodel.intent_aware_sys \
