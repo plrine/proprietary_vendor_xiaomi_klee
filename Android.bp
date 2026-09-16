@@ -190,7 +190,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.security.keymint-V3-ndk-v34",
+    name: "android.hardware.security.keymint-V3-ndk-v36",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -198,7 +198,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk-v34.so",
+                "proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk-v36.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -2689,6 +2689,33 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libneuron_runtime.8",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_android_keymaster_keymint_utils-v36",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_android_keymaster_keymint_utils-v36.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "libbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -7534,6 +7561,108 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libjpeg",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint-v36",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymint-v36.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "libhidlbase",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils-v36",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor",
+                "libcrypto",
+                "libcutils",
+                "libkeymaster_messages",
+                "libkeymaster_portable",
+                "liblog",
+                "libpuresoftkeymasterdevice",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint_remote_prov_support-v36",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymint_remote_prov_support-v36.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor",
+                "libcppcose_rkp",
+                "libcrypto",
+                "libkeymaster_portable",
+                "libjsoncpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint_support-v36",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymint_support-v36.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "libbase",
+                "libcrypto",
+                "libutils",
+                "libhardware",
                 "libc++",
                 "libc",
                 "libm",
@@ -36175,13 +36304,13 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "vendor.xiaomi.hardware.idmanager-V1-ndk",
                 "libkeymaster_messages",
-                "lib_android_keymaster_keymint_utils",
+                "lib_android_keymaster_keymint_utils-v36",
                 "libhardware",
                 "libkeymaster4support",
-                "libkeymint",
-                "libkeymint_support_V3",
-                "libkeymint_remote_prov_support",
-                "android.hardware.security.keymint-V3-ndk-v34",
+                "libkeymint-v36",
+                "libkeymint_support-v36",
+                "libkeymint_remote_prov_support-v36",
+                "android.hardware.security.keymint-V3-ndk-v36",
                 "android.hardware.secure_element-V1-ndk",
                 "libc++",
                 "libc",
@@ -37039,12 +37168,12 @@ cc_prebuilt_library_shared {
                 "vendor.xiaomi.hardware.idmanager-V1-ndk",
                 "libhardware",
                 "libkeymaster4support",
-                "lib_android_keymaster_keymint_utils",
-                "libkeymint",
+                "lib_android_keymaster_keymint_utils-v36",
+                "libkeymint-v36",
                 "libkeymaster_messages",
-                "libkeymint_support_V3",
-                "android.hardware.security.keymint-V3-ndk-v34",
-                "libkeymint_remote_prov_support",
+                "libkeymint_support-v36",
+                "android.hardware.security.keymint-V3-ndk-v36",
+                "libkeymint_remote_prov_support-v36",
                 "libmisight",
                 "libc++",
                 "libc",
@@ -38686,19 +38815,19 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.mitee",
             ],
             shared_libs: [
-                "android.hardware.security.keymint-V3-ndk-v34",
+                "android.hardware.security.keymint-V3-ndk-v36",
                 "libteecli",
                 "libhidlbase",
                 "android.hardware.security.rkp-V3-ndk",
                 "android.hardware.security.secureclock-V1-ndk",
                 "android.hardware.security.sharedsecret-V1-ndk",
-                "lib_android_keymaster_keymint_utils",
+                "lib_android_keymaster_keymint_utils-v36",
                 "libbase",
                 "libbinder_ndk",
                 "libcrypto",
                 "libhardware",
                 "libkeymaster_messages",
-                "libkeymint",
+                "libkeymint-v36",
                 "liblog",
                 "libtrusty",
                 "libutils",

@@ -901,7 +901,7 @@ PRODUCT_PACKAGES += \
     APUWareUtilsAidlServer \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
-    android.hardware.security.keymint-V3-ndk-v34 \
+    android.hardware.security.keymint-V3-ndk-v36 \
     com.xiaomi.camdfx \
     com.xiaomi.camhal.extmodel.ec_executor \
     com.xiaomi.camhal.extmodel.intent_aware_sys \
@@ -977,6 +977,7 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     libXMFaceFocus-vendor \
     libXMFaceFocus1206 \
+    lib_android_keymaster_keymint_utils-v36 \
     lib_iir \
     libaaa_aaautil \
     libaaa_afassist_V2 \
@@ -1135,6 +1136,9 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libjpegdecoder_klee \
     libjpegencoder_klee \
+    libkeymint-v36 \
+    libkeymint_remote_prov_support-v36 \
+    libkeymint_support-v36 \
     libmbrainSDKv \
     libmcve \
     libmetatagwrapper \
